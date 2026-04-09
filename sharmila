@@ -1,0 +1,28 @@
+import java.util.Random;
+
+public class RandomExample {
+    public static void main(String[] args) {
+        // Create an instance of the Random class
+        Random random = new Random();
+
+        // 1. Generate a random integer between 0 and 99
+        int randomInt = random.nextInt(100); 
+        
+        // 2. Generate a random integer in a specific range (e.g., 50 to 100)
+        int min = 50, max = 100;
+        int rangedInt = random.nextInt(max - min + 1) + min;
+
+        // 3. Generate a random double (between 0.0 and 1.0)
+        double randomDouble = random.nextDouble();
+
+        // 4. Generate a random boolean (true or false)
+        boolean randomBool = random.nextBoolean();
+
+        // Print results
+        System.out.println("Random Integer (0-99): " + randomInt);
+        System.out.println("Random Integer (50-100): " + rangedInt);
+        System.out.println("Random Double: " + randomDouble);
+        System.out.println("Random Boolean: " + randomBool);
+    }
+}
+
